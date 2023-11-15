@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Post } from './interfaces/Post.interface';
+import { ServicioService } from './services/servicio.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Blog';
+
+  arrPosts: Post[] = [];
+
+  servicio = inject(ServicioService);
+
+  ngOnInit() {
+    this.arrPosts = this.servicio.getAll();
+  }
+
+
+
 }
