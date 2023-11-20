@@ -1,3 +1,11 @@
+<div class="caja">
+    <div class="container">
+        <h1>Bienvenido.</h1>
+        <h2>chachipiruli</h2>
+        <h3>que la abuela fuma</h3>
+        <h4>epico</h4>
+    </div>
+</div>
 <div class="container-fluid">
 
     <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -22,11 +30,9 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>-->
-    <div class="caja">
-        <img src="https://miro.medium.com/v2/resize:fit:1400/1*TYv0suN2bKCGvmmqOECw0Q.jpeg" alt="">
-    </div>
 
-    <div class="principal">
+
+    <div class="posts">
         <app-lista-posts class="w-50 mx-auto text-center pt-5" *ngFor="let post of arrPosts"
             [post]="post"></app-lista-posts>
     </div>
