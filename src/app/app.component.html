@@ -1,2 +1,80 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a [routerLink]="['posts']" class="navbar-brand">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" [routerLink]="['posts']">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['new']">New Post</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
 <router-outlet></router-outlet>
-<app-lista-posts *ngFor="let post of arrPosts" [post]="post"></app-lista-posts>
+
+<!-- <footer>
+    <div class="container">
+        <aside class="footer-top">
+            <figure>
+                <img src="./images/spotify_logo.png" alt="">
+            </figure>
+            <nav>
+                <h5>Empresa</h5>
+                <ul>
+                    <li><a href="">Acerca de</a></li>
+                    <li><a href="">Empleo</a></li>
+                    <li><a href="">For the Record</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h5>COMUNIDADES</h5>
+                <ul>
+                    <li><a href="">Para artistas</a></li>
+                    <li><a href="">Desarrolladores</a></li>
+                    <li><a href="">Publicidad</a></li>
+
+                </ul>
+            </nav>
+            <nav>
+                <h5>Enlaces útiles</h5>
+                <ul>
+                    <li><a href="">Acerca de</a></li>
+                    <li><a href="">Empleo</a></li>
+                    <li><a href="">For the Record</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="" title="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="" title="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </aside>
+
+
+
+    </div>
+</footer> -->

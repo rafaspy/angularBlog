@@ -7,13 +7,16 @@ import { FormularioComponent } from './pages/formulario/formulario.component';
 import { ListaPostsComponent } from './pages/lista-posts/lista-posts.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { HomeComponent } from './pages/home/home.component'
+import { HomeComponent } from './pages/home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
     ListaPostsComponent,
-    HomeComponent
+    HomeComponent,
+
+
   ],
   imports: [
     BrowserModule,

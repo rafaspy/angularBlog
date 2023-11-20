@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic');
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.etiqueta {
+    background-color: #334155;
+    color: #d4d4d4;
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+}
+
+article p {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    font-family: 'lato';
+
+    &.texto {
+        font-size: 1.3rem;
+    }
+
+    &.autor {
+        padding-top: 0.5rem;
+        font-family: 'Roboto Mono';
+        color: brown;
+
+    }
+}
+
+
+.article h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* 
+fecha */
+article div p:nth-child(3) {
+    color: gray;
+    font-size: 1.3rem;
+    text-align: right;
+    flex-grow: 1;
+    padding-top: 1rem;
+
+}

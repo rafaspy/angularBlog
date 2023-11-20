@@ -1,12 +1,16 @@
-<div class="container">
+<div>
     <article>
-        <h3>{{post.titulo}}</h3>
-        <p>{{post.texto}}</p>
+        <h3 class="p-3 fs-2 border-top border-3">{{post.titulo}}</h3>
+        <p class="texto">{{post.texto}}</p>
         <p>{{post.imagen}}</p>
 
-        <p>{{post.categoria}}</p>
-        <p>{{post.fecha}}</p>
-        <p>{{post.autor}}</p>
+
+
+        <div class="flex">
+            <p class="etiqueta">{{post.categoria}}</p>
+            <p class="autor">{{post.autor}}</p>
+            <p>{{post.fecha}}</p>
+        </div>
 
     </article>
 </div>

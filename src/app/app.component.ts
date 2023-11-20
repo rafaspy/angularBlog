@@ -9,14 +9,5 @@ import { ServicioService } from './services/servicio.service';
 })
 export class AppComponent {
 
-  arrPosts: Post[] = [];
-
-  servicio = inject(ServicioService);
-
-  ngOnInit() {
-    this.arrPosts = this.servicio.getAll();
-  }
-
-
 
 }
